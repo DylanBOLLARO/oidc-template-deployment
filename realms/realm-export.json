@@ -1,0 +1,36 @@
+{
+    "realm": "myrealm",
+    "enabled": true,
+    "clients": [
+        {
+            "clientId": "oidc-template",
+            "name": "OIDC",
+            "enabled": true,
+            "protocol": "openid-connect",
+            "publicClient": false,
+            "secret": "my-client-secret",
+            "standardFlowEnabled": true,
+            "directAccessGrantsEnabled": true,
+            "serviceAccountsEnabled": false,
+            "redirectUris": ["*"],
+            "webOrigins": ["*"]
+        }
+    ],
+    "users": [
+        {
+            "username": "jdoe",
+            "enabled": true,
+            "email": "jdoe@example.com",
+            "firstName": "John",
+            "lastName": "Doe",
+            "emailVerified": true,
+            "credentials": [
+                {
+                    "type": "password",
+                    "value": "randompassword12345",
+                    "temporary": false
+                }
+            ]
+        }
+    ]
+}
